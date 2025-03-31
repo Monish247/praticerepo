@@ -16,6 +16,7 @@ Switch to an Existing Branch: git checkout <branch-name> Switches to the specifi
 Create and Switch to a New Branch: git checkout -b <branch-name> Creates and switches to a new branch.
 Merge Branches: git merge <branch-name> Merges the specified branch into the current branch.
 Delete a Branch: git branch -d <branch-name> Deletes a branch.
+git pull origin master --allow-unrelated-histories : To force Git to merge unrelated histories, you can use the --allow-unrelated-histories flag:
 
 Syncing with Remote
 
