@@ -1,0 +1,51 @@
+
+Basic Git Commands
+
+
+Initialize a Repository: git init Initializes a new Git repository in the current directory.
+Clone a Repository: git clone <repository_url> Clones a repository from a remote server to your local machine.
+Add Files to Staging Area: git add <file> git add . Adds specific files or all modified and new files to the staging area.
+Commit Changes: git commit -m "commit message" Creates a new commit with the changes in the staging area and specifies the commit message inline.
+
+
+Branching Commands
+
+List All Branches: git branch Lists all branches in the repository.
+Create a New Branch: git branch <branch-name> Creates a new branch.
+Switch to an Existing Branch: git checkout <branch-name> Switches to the specified branch.
+Create and Switch to a New Branch: git checkout -b <branch-name> Creates and switches to a new branch.
+Merge Branches: git merge <branch-name> Merges the specified branch into the current branch.
+Delete a Branch: git branch -d <branch-name> Deletes a branch.
+
+Syncing with Remote
+
+Add a Remote Repository: git remote add origin <repo-URL> Links your local repository to a remote repository.
+Fetch Updates from Remote: git fetch Downloads updates from the remote repository.
+Pull and Merge Changes from Remote: git pull origin <branch-name> Fetches and merges changes from the specified branch on the remote.
+Push Local Commits to Remote: git push origin <branch-name> Pushes commits to the specified branch on the remote.
+
+Undoing Changes
+
+Unstage a File: git reset <file-name> Removes the file from the staging area.
+Undo the Last Commit (Keep Changes Staged): git reset --soft HEAD~1 Undoes the last commit but keeps changes staged.
+Undo the Last Commit (Discard Changes): git reset --hard HEAD~1 Undoes the last commit and discards all changes.
+Discard Changes in a File: git checkout -- <file-name> Discards changes and resets the file to the last committed version.
+
+Viewing History
+
+View Commit History: git log Displays the commit history.
+View Condensed Commit History: git log --oneline Shows a compact version of the commit history.
+View Details of a Specific Commit: git show <commit-hash> Displays the details of the specified commit.
+
+Advanced Commands
+
+Temporarily Save Changes: git stash Saves changes and cleans up the working directory.
+Apply Stashed Changes: git stash apply Restores saved changes to the working directory.
+Reapply Commits on Top of Another Branch: git rebase <branch-name> Moves the commits to the specified base branch.
+Apply a Specific Commit: git cherry-pick <commit-hash> Copies a specific commit from one branch to another.
+Create a Tag for a Commit: git tag <tag-name> Marks a specific commit with a tag (e.g., versioning).
+Push a Tag to the Remote Repository: git push origin <tag-name> Pushes a specific tag to the remote.
+Push All Tags to Remote: git push --tags Pushes all local tags to the remote repository.
+Find the Commit That Introduced a Bug: git bisect Uses binary search to locate the problematic commit.
+View History of Changes to HEAD: git reflog Shows the history of updates to HEAD (useful for recovery)
+
